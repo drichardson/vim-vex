@@ -54,7 +54,6 @@ Depending on your installation method, you may have to generate the plugin's
 ==============================================================================
 CREDITS                                                         *vex-credits*
 
-* Go Authors for official Vim plugins.
 * SideFX for authoring the vfl.vim syntax file and putting it in the public
   domain.
 * Other vim-plugins, thanks for inspiration (vim-go).
