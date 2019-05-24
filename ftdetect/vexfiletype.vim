@@ -11,6 +11,6 @@ endfunction
 
 
 " Note: should not use augroup in ftdetect (see :help ftdetect)
-au BufRead,BufNewFile *.vex setfiletype vex | call s:set_vex_dictionary()
+au BufRead,BufNewFile *.vex,*.vfl setfiletype vex | call s:set_vex_dictionary()
 
 " vim: sw=2 ts=2 et
