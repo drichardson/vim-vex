@@ -1,4 +1,4 @@
-*vim-vex* VEX development plugin
+*vim.vex* VEX development plugin
 
 ==============================================================================
 CONTENTS                                                          *vex-contents*
@@ -11,7 +11,7 @@ CONTENTS                                                          *vex-contents*
 ==============================================================================
 INTRO                                                                *vex-intro*
 
-VEX support for Vim. vim-vex comes with a syntax file and dictionary for
+VEX support for Vim. vex.vim comes with a syntax file and dictionary for
 `dictionary` completion of built-in VEX functions.
 
 ==============================================================================
@@ -23,7 +23,7 @@ can trigger with |i_CTRL-X_CTRL-K| (`<C-x><C-k>`).
 ==============================================================================
 INSTALL                                                            *vex-install*
 
-vim-vex follows the standard runtime path structure and should work with any of
+vex.vim follows the standard runtime path structure and should work with any of
 the major plugin managers.
 
 For Pathogen or Vim |packages|, just clone the repo. For other plugin managers
@@ -32,13 +32,13 @@ manager's install command.
 
 *  Vim 8 |packages|
 >
-    git clone https://github.com/drichardson/vim-vex.git \
-      ~/.vim/pack/plugins/start/vim-go
+    git clone https://github.com/drichardson/vex.vim.git \
+      ~/.vim/pack/plugins/start/vex.vim
 
 *  https://github.com/tpope/vim-pathogen >
 
-    git clone https://github.com/drichardson/vim-vex.git ~/.vim/bundle/vim-go
-vim-go follows the standard runtime path structure and should work with any of
+    git clone https://github.com/drichardson/vex.vim.git ~/.vim/bundle/vex.vim
+vex.vim follows the standard runtime path structure and should work with any of
 the major plugin managers.
 
 For Pathogen or Vim |packages|, just clone the repo. For other plugin managers
@@ -47,24 +47,24 @@ manager's install command.
 
 *  Vim 8 |packages|
 >
-    git clone https://github.com/drichardson/vim-vex.git \
-      ~/.vim/pack/plugins/start/vim-vex
+    git clone https://github.com/drichardson/vex.vim.git \
+      ~/.vim/pack/plugins/start/vex.vim
 
 *  https://github.com/tpope/vim-pathogen >
 
-    git clone https://github.com/drichardson/vim-vex.git ~/.vim/bundle/vim-go
+    git clone https://github.com/drichardson/vex.vim.git ~/.vim/bundle/vex.vim
 <
 *  https://github.com/junegunn/vim-plug >
 
-    Plug 'drichardson/vim-vex'
+    Plug 'drichardson/vex.vim'
 
 *  https://github.com/Shougo/neobundle.vim >
 
-    NeoBundle 'drichardson/vim-vex'
+    NeoBundle 'drichardson/vex.vim'
 <
 *  https://github.com/gmarik/vundle >
 
-    Plugin 'drichardson/vim-vex', { 'do': ':GoUpdateBinaries' }
+    Plugin 'drichardson/vex.vim'
 <
 *  Manual (not recommended) >
 
@@ -80,8 +80,8 @@ CREDITS                                                         *vex-credits*
 * Go Authors for official Vim plugins.
 * SideFX for authoring the vfl.vim syntax file and putting it in the public
   domain.
-* Other vim-plugins, thanks for inspiration (vim-go).
-* vim-vex contributors:
-  https://github.com/drichardson/vim-vex/graphs/contributors
+* Other vim-plugins, thanks for inspiration (vex.vim).
+* vex.vim contributors:
+  https://github.com/drichardson/vex.vim/graphs/contributors
 
  vim: ft=help tw=78 et ts=2 sw=2 sts=2 norl
