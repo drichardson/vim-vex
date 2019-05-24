@@ -1,4 +1,4 @@
-*vim.vex* VEX development plugin
+*vex.vim* VEX development plugin
 
 ==============================================================================
 CONTENTS                                                          *vex-contents*
@@ -39,14 +39,6 @@ manager's install command.
 
     git clone https://github.com/drichardson/vex.vim.git ~/.vim/bundle/vex.vim
 <
-*  https://github.com/junegunn/vim-plug >
-
-    Plug 'drichardson/vex.vim'
-
-*  https://github.com/Shougo/neobundle.vim >
-
-    NeoBundle 'drichardson/vex.vim'
-<
 *  https://github.com/gmarik/vundle >
 
     Plugin 'drichardson/vex.vim'
@@ -54,8 +46,8 @@ manager's install command.
 *  Manual (not recommended) >
 
     Copy all of the files into your `~/.vim` directory
-<
 
+<
 Depending on your installation method, you may have to generate the plugin's
 |:helptags| manually (e.g. `:helptags ALL`).
 
@@ -65,7 +57,7 @@ CREDITS                                                         *vex-credits*
 * Go Authors for official Vim plugins.
 * SideFX for authoring the vfl.vim syntax file and putting it in the public
   domain.
-* Other vim-plugins, thanks for inspiration (vex.vim).
+* Other vim-plugins, thanks for inspiration (vim-go).
 * vex.vim contributors:
   https://github.com/drichardson/vex.vim/graphs/contributors
 
