@@ -8,7 +8,7 @@ For information on using dictionary completion in Vim, run `:help dictionary`.
 ## Notes
 
 The syntax file itself is the same file that ships with Houdini and is located in
-`$HFS/public/syntax/vlf.vim`. Side FX put this file in the public domain which I confirmed
+`$HFS/public/syntax/vfl.vim`. Side FX put this file in the public domain which I confirmed
 via their customer support (Side Effects Support Ticket 77542).
 
 
