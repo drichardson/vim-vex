@@ -1,0 +1,76 @@
+
+# Snippets for VEX
+
+priority -10
+
+snippet if "if ( ... ) { ... }"
+if (${1:condition})
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet else "else { ... }"
+else
+{
+	${0:${VISUAL}}
+}
+endsnippet
+	
+snippet do "do { ... } while (...)"
+do
+{
+	${0}
+}
+while(${1:condition})
+endsnippet
+	
+snippet for "for (init; condition; change) { ... }"
+for (${1:init}; ${2:condition}; ${3:change})
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet foreach "foreach (value; array) { ... }"
+foreach (${1:value}; ${2:array})
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet foreachi "foreach (index, value; array) { ... }"
+foreach (${1:index}, ${2:value}; ${3:array})
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet while "while (condition) { ... }"
+while (${1:condition})
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet forpoints "forpoints (position)"
+forpoints (${1:position})
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet gather "gather (origin, direction) { ... }"
+gather(${1:origin}, ${2:direction})
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet illuminance "illuminance (position, axis, angle, light_typemask, lightmask) { ... }"
+illuminance(${1:position}, ${2:axis}, ${3:angle}, ${4:light_typemask}, ${5:lightmask})
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
