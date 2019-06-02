@@ -14,6 +14,12 @@ via their customer support (Side Effects Support Ticket 77542).
 
 ## Dictionary Generation
 
+1. Start Houdini
+2. Main Menu > Window > Shell
+3. In the shell, navigate to the vex.vim directory
+4. Run `python generate-dictionary.py > dictionary.txt`
+5. Copy the file 
+
 The dictionary is created with:
 
    vcc -X surface

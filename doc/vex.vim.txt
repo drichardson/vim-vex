@@ -51,6 +51,11 @@ manager's install command.
 Depending on your installation method, you may have to generate the plugin's
 |:helptags| manually (e.g. `:helptags ALL`).
 
+To update the completion dictionary, start a shell in Houdini, navigate to the
+vex-vim directory, and then run:
+
+  python generate-dictionary.py > dictionary.txt
+
 ==============================================================================
 CREDITS                                                         *vex-credits*
 
