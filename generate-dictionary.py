@@ -6,9 +6,17 @@ import subprocess
 # We use these 2 things to build a single uber context that is the union of all
 # other contexts. This uber context is used for completion since Vim, running
 # as an external editor from Houdini, has no idea which specific context it is in.
-
 #
-# vcc --list-context-json
+# vcc must be in your PATH. One way to do this is to run this python script
+# from the Houdini Command Line Tools.
+#
+# For more information on vcc, see:
+# https://www.sidefx.com/docs/houdini/vex/vcc.html
+#
+#
+# Example Output from vcc:
+#
+# $ vcc --list-context-json
 # [
 #        "surface",
 #        "displace",
@@ -18,7 +26,7 @@ import subprocess
 #
 
 #
-# vcc --list-context-json sop
+# $ vcc --list-context-json sop
 #
 # {
 #  "context": "Sop",
