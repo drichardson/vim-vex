@@ -18,12 +18,5 @@ via their customer support (Side Effects Support Ticket 77542).
 2. Main Menu > Window > Shell
 3. In the shell, navigate to the vex.vim directory
 4. Run `python generate-dictionary.py > dictionary.txt`
-5. Copy the file 
 
-The dictionary is created with:
-
-   vcc -X surface
-
-which you can run inside shell from Houdini main menu > Windows > Shell. More information
-on this process is [in the SideFX forum](https://www.sidefx.com/forum/topic/19533/#post-91824).
 
