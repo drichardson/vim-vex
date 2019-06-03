@@ -60,8 +60,8 @@ import subprocess
 #            },
 #
 
-# contextNames = json.loads(subprocess.check_output(["vcc", "--list-context-json"]))
-contextNames = ["cvex"]
+contextNames = json.loads(subprocess.check_output(["vcc", "--list-context-json"]))
+# contextNames = ["cvex"]
  
 # Build a dictionary of keys that match the completion. The value for each
 # key is an array of items that match it (the variations).
