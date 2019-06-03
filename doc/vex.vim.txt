@@ -20,7 +20,10 @@ and snippet support for `UltiSnips`.
 USAGE                                                                *vex-usage*
 
 Code completion is enabled via 'dictionary', which you
-can trigger with |i_CTRL-X_CTRL-K|.
+can trigger with |i_CTRL-X_CTRL-K|. Note that VEX has several different
+contexts, each with their own variables and functions. By default the
+cvex context is used but you can use another VEX context with `g:vex_context`.
+
 
 ==============================================================================
 INSTALL                                                            *vex-install*
