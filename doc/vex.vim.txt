@@ -1,4 +1,4 @@
-*vex.vim* VEX development plugin
+*vex.vim* *vex* VEX development plugin
 
 ==============================================================================
 CONTENTS                                                          *vex-contents*
@@ -6,19 +6,21 @@ CONTENTS                                                          *vex-contents*
   1. Intro ............... |vex-contents|
   2. Usage ............... |vex-intro|
   3. Install ............. |vex-usage|
-  4. Credits ............. |vex-credits|
+  4. Settings ............ |vex-settings|
+  5. Credits ............. |vex-credits|
 
 ==============================================================================
 INTRO                                                                *vex-intro*
 
-VEX support for Vim. vex.vim comes with a syntax file and dictionary for
-`dictionary` completion of built-in VEX functions.
+VEX support for Vim. vex.vim comes with a syntax highlighting,
+`dictionary` completion of VEX built-in functions and global variables,
+and snippet support for `UltiSnips`.
 
 ==============================================================================
 USAGE                                                                *vex-usage*
 
-Rudimentary code completion is enabled by default via 'dictionary', which you
-can trigger with |i_CTRL-X_CTRL-K| (`<C-x><C-k>`).
+Code completion is enabled via 'dictionary', which you
+can trigger with |i_CTRL-X_CTRL-K|.
 
 ==============================================================================
 INSTALL                                                            *vex-install*
@@ -39,10 +41,10 @@ manager's install command.
 
     git clone https://github.com/drichardson/vex.vim.git ~/.vim/bundle/vex.vim
 <
-*  https://github.com/gmarik/vundle >
+*  https://github.com/VundleVim/Vundle.Vim
 
     Plugin 'drichardson/vex.vim'
-<
+
 *  Manual (not recommended) >
 
     Copy all of the files into your `~/.vim` directory
@@ -51,13 +53,51 @@ manager's install command.
 Depending on your installation method, you may have to generate the plugin's
 |:helptags| manually (e.g. `:helptags ALL`).
 
-To update the completion dictionary, start a shell in Houdini, navigate to the
+To update the completion dictionary, run the generate-dictionary.py Python
+script. You will need vcc in your PATH. You can easily do this by using the Houdini
+Command Line Tools shell or the shell started from Houdini. Then navigate to the
 vex-vim directory, and then run:
 
   python generate-dictionary.py > dictionary.txt
 
 ==============================================================================
-CREDITS                                                         *vex-credits*
+SETTINGS                                                          *vex-settings*
+
+
+                                                        *'g:vex_snippet_engine'*
+
+Define the snippet engine to use. The default is to auto-detect one. Valid
+values are:
+
+  automatic      Automatically detect a snippet engine.
+  ultisnips      https://github.com/SirVer/ultisnips
+>
+  let g:vex_snippet_engine = "automatic"
+<
+
+                                                              *'g:vex_context'*
+
+The VEX context to use for completion. By default the cvex context is used.
+Valid values are:
+
+  surface     https://www.sidefx.com/docs/houdini/vex/contexts/surface.html
+  displace    https://www.sidefx.com/docs/houdini/vex/contexts/displace.html
+  light       https://www.sidefx.com/docs/houdini/vex/contexts/light.html
+  shadow      https://www.sidefx.com/docs/houdini/vex/contexts/shadow.html
+  fog         https://www.sidefx.com/docs/houdini/vex/contexts/fog.html
+  chop        https://www.sidefx.com/docs/houdini/vex/contexts/chop.html
+  sop         https://www.sidefx.com/docs/houdini/vex/contexts/sop.html 
+  cop2        https://www.sidefx.com/docs/houdini/vex/contexts/cop.html
+  image3d     https://www.sidefx.com/docs/houdini/vex/contexts/image3d.html
+  cvex        https://www.sidefx.com/docs/houdini/vex/contexts/cvex.html
+>
+  let g:vex_context = 'cvex'
+
+For more information, see VEX contexts in SideFX's documentation:
+https://www.sidefx.com/docs/houdini/vex/contexts/index.html
+
+==============================================================================
+CREDITS                                                            *vex-credits*
 
 * SideFX for authoring the vfl.vim syntax file and putting it in the public
   domain.

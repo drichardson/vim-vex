@@ -6,4 +6,4 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-call vex#dictionary#Load()
+set omnifunc=vex#omnifunc#Complete
